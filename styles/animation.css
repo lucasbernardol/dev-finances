@@ -1,0 +1,29 @@
+@keyframes animate-down {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes to-left {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,74 @@
+.exception-container.active {
+  left: 16px;
+}
+
+.exception-container {
+  position: fixed;
+  bottom: 16px;
+  left: -100%;
+
+  z-index: 999;
+
+  width: min(100%, 360px);
+  padding: 14px 16px;
+
+  background-color: var(--exception-background);
+
+  border-bottom: 4px solid var(--exception-border);
+  border-radius: 2px 2px 0 0;
+
+  transition: left 0.8s ease;
+}
+
+.exception-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exception-button {
+  flex: none;
+
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+
+  background-color: var(--exception-highlight);
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.exception-button:hover {
+  opacity: 0.7;
+}
+
+.exception-message {
+  flex: none;
+  max-width: 300px;
+
+  color: var(--white-color);
+}
+
+@media (max-width: 600px) {
+  .exception-container {
+    bottom: 0;
+  }
+
+  .exception-container.active {
+    left: 0;
+  }
+
+  .exception-message {
+    max-width: 200px;
+  }
+
+  .exception-container {
+    padding: 12px;
+  }
+}

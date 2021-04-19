@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+:root {
+  --background: #f0f0f5;
+
+  --primary-color: #006b3d;
+  --secondary-color: #069c56;
+
+  --primary-color-hover: #005a33;
+  --secondary-color-hover: #00be66;
+
+  --white-color: #fff;
+  --gray-line: #dbdbdb;
+
+  --text: #363636;
+  --text-highlight: #555555;
+
+  --dark-blue: #283a5e;
+
+  --income-color: #e23d3d;
+  --expense-color: #00be66;
+
+  --cancel-color: #fd3a69;
+
+  --exception-background: #e45151;
+  --exception-border: #b93131;
+  --exception-highlight: #b32525;
+
+  --modal-background: rgba(0, 0, 0, 0.7);
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+
+  outline: none;
+  border: none;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+ * Screen reader
+ *  Apenas leitores de tela.
+ */
+
+.screen-reader-only {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  font-size: 0.001px;
+  visibility: hidden;
+}
+
+/* 
+ * Disable selection:
+ *  desabilitar a seleção do usuário.
+ */
+
+.disable-user-selection {
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+[hidden] {
+  display: none;
+}
